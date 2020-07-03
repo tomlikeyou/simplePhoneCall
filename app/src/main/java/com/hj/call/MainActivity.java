@@ -60,11 +60,11 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     //响铃，来电时候触发
                     case TelephonyManager.CALL_STATE_RINGING:
-                        textView.setText("正在通话中");
+                        textView.setText("正在拨打");
                         break;
                     //摘机，接听或拨出电话时触发
                     case TelephonyManager.CALL_STATE_OFFHOOK:
-                        textView.setText("正在拨打");
+                        textView.setText("正在通话中");
                         //设置按钮不可点击
                         callOutBtn.setEnabled(false);
                         break;
